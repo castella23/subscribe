@@ -1,7 +1,10 @@
-/* Add your styles here */
-/* Use appropriate CSS selectors to target elements and apply styles */
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Barlow", sans-serif;
+}
 
-/* Example styles for the header and navigation */
 header {
       background-color: #333;
       color: #fff;
@@ -40,4 +43,222 @@ footer {
       color: #fff;
       padding: 10px;
       text-align: center;
+}
+
+
+.title .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+}
+
+.title .top .line {
+      flex-basis: 90%;
+      height: 5px;
+      background: blue;
+}
+
+.title .top span {
+      flex-basis: 10%;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+}
+
+.title h1 {
+      font-size: 10rem;
+      display: block;
+      color: blue;
+      text-align: center;
+      text-transform: uppercase;
+}
+
+.title .date {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.5rem;
+}
+
+.date span:first-child {
+      padding: 0.5rem 1rem;
+      background: blue;
+      color: whitesmoke;
+      text-transform: uppercase;
+}
+
+.date span:last-child {
+      text-transform: uppercase;
+}
+
+.banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 1rem;
+      margin-top: 2rem;
+}
+
+.banner article,
+.banner figure {
+      flex-basis: 50%;
+      min-height: 80vh;
+}
+
+.banner article {
+      background: blue;
+      color: whitesmoke;
+      text-transform: uppercase;
+      padding: 2rem;
+}
+
+.banner article li {
+      margin: 1rem 0;
+}
+
+
+.company {
+      display: flex;
+      align-items: start;
+      padding: 1rem;
+      background: blue;
+      color: whitesmoke;
+      justify-content: space-between;
+      text-transform: uppercase;
+      min-height: 30vh;
+      margin-top: 4rem;
+}
+
+.company article,
+.company figure {
+      flex-basis: 50%;
+}
+
+.company figure img {
+      height: 15rem;
+      width: 100%;
+      object-fit: cover;
+
+}
+
+/* stats */
+
+
+.statistics {
+      display: flex;
+      align-items: start;
+      padding: 1rem;
+
+      color: blue;
+      justify-content: space-between;
+      text-transform: uppercase;
+      min-height: 30vh;
+      margin-top: 4rem;
+}
+
+.statistics article,
+.statistics figure {
+      flex-basis: 50%;
+}
+
+.statistics figure img {
+      height: 15rem;
+      width: 100%;
+      object-fit: cover;
+
+}
+
+.subscribe {
+      background: blue;
+      color: whitesmoke;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      padding: 1.5rem;
+      gap: 2rem;
+}
+
+.subscribe a {
+      text-decoration: none;
+      background: whitesmoke;
+      color: blue;
+      padding: 1rem;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+}
+
+.subscribe a:hover {
+      transform: scale(1.1);
+}
+
+.archive {
+      width: 100%;
+}
+
+.archive ul li {
+      gap: 1rem;
+      display: flex;
+      align-items: start;
+      padding: 1rem;
+      border-radius: 0.5rem;
+}
+
+.archive ul li:nth-child(odd) {
+      background: blue;
+      color: whitesmoke;
+}
+
+
+.archive ul li:nth-child(odd) a {
+      color: whitesmoke;
+      background: blue;
+      border: 2px solid whitesmoke;
+}
+
+.archive ul li:nth-child(even) {
+      color: blue;
+      background: whitesmoke;
+}
+
+.archive ul li:nth-child(even) a {
+      color: blue;
+      background: whitesmoke;
+      border: 2px solid blue;
+
+}
+
+.archive ul li :is(.body, .image) {
+      flex-basis: 50%;
+      position: relative;
+}
+
+.body p,
+.body a,
+.body h2 {
+      line-height: 1.7;
+}
+
+.body a {
+      text-decoration: none;
+      transition: all 0.3s;
+      padding: 1rem;
+      border-radius: 5px;
+}
+
+.body a:hover {
+      transform: scale(1.1);
+}
+
+.readMore {
+      position: absolute;
+      bottom: -5rem;
+}
+
+.image img {
+      height: 15rem;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
 }
